@@ -1,3 +1,11 @@
+html, 
+body {
+    font-size: 10px;
+}
 body {
     background-color: var(--color-pomb-and-power);
+    font-family: var(--font-press-player), cursive;
+    max-width: 320px;
+    height: 100%;
+    margin: auto;
 }

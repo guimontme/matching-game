@@ -1,0 +1,6 @@
+.score-board {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}

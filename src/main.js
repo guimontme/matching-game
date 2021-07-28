@@ -1,11 +1,15 @@
 import './assets/styles/style.css'
-import CardGame from './components/CardGame'
+import ScoreBoard from './objects/ScoreBoard' 
+import BoardGame from './objects/BoardGame' 
 
 // const title = 'Matching Game'
 
 const $root = document.querySelector('#root')
-const $htmlCardGame = CardGame();
 
-console.log($htmlCardGame);
+$root.insertAdjacentHTML(
+  "beforeend", 
+  `
+  ${ScoreBoard('Player 1', 'Player 2')}
+  ${BoardGame(6)}
 
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+`);

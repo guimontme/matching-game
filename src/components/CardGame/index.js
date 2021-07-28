@@ -1,7 +1,12 @@
 import './style.css'
 
-export default function CardGame() {
-    return`<article class="card-game">
-        <img src="./src/assets/images/alura-pixel.png" alt="" />
-    </article>`
+
+
+export default function CardGame(icon = 'alura-pixel', alt = 'Logo da Alura') {
+  const state = (icon == 'alura-pixel') ? 'front' : 'back';
+  return /*html*/ `
+    <article class="card-game ${state}">
+        <img src="./src/assets/images/${icon}.png" alt="${alt}" />
+    </article>
+    `
 }

@@ -1,0 +1,28 @@
+.card-front-back {
+    width: 130px;
+    height: 160px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    position: relative;
+    cursor:pointer;
+}
+
+.card-front-back.open {
+    transform: rotateY(180deg);
+  }
+
+.card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card.-front {
+    background: var(--color-alura);
+}
+
+.card.-back {
+    background: var(--color-fiery-rose);
+    transform: rotateY(180deg);
+}

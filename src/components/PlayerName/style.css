@@ -1,0 +1,8 @@
+.player-name {
+    font-family: var(--font-press-player);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: var(--color-floral-white);
+}
